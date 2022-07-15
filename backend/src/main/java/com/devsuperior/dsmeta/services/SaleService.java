@@ -21,6 +21,6 @@ public class SaleService {
 		LocalDate min = LocalDate.parse(minDate);
 		LocalDate max = LocalDate.parse(maxDate);
 		
-		return repository.findAll(min, max, pageable);
+		return repository.findSales(min, max, pageable);
 	}
 }
